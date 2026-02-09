@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CeramicSG | Singapore Pottery Directory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ecc8",
+                        "background-light": "#fdfbf9", // Creamier background
+                        "background-dark": "#10221f",
+                        "terracotta": "#e2725b",
+                        "sage": "#8a9a5b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .serif-heading { font-family: 'Playfair Display', serif; }
+        .bg-clay-texture {
+            background-image: radial-gradient(#e2725b11 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#1c1c1c] dark:text-gray-100 antialiased bg-clay-texture">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-[#e7f3f1] bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-gray-800">
+<div class="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 text-terracotta">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+</svg>
+</div>
+<h2 class="text-[#0d1b19] dark:text-white text-xl font-bold tracking-tight serif-heading">CeramicSG</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-terracotta transition-colors" href="#">Find a Studio</a>
+<a class="text-sm font-medium hover:text-terracotta transition-colors" href="#">Reviews</a>
+<a class="text-sm font-medium hover:text-terracotta transition-colors" href="#">Workshops</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="text-sm font-medium text-sage hover:text-terracotta" href="#">For Owners</a>
+<button class="bg-primary text-[#0d1b19] px-5 py-2 rounded-lg text-sm font-bold shadow-sm hover:brightness-105 transition-all">
+                    Sign In
+                </button>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-6">
+<!-- Hero Section -->
+<section class="py-10">
+<div class="relative w-full aspect-[21/9] min-h-[400px] rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of ceramic vase being thrown on a potter's wheel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnVojpSGOis8sbP9hW8JUxW1cO5bFyy_wMJbAL6W1LNgFlopqyaie89AbvTnr-JGVZC4JDXDrVbBaK3GD9cgv2pp_k9hVdXj3mjoT--fBKAjMjtxz9lLLlf3koCbpCaLnXzZJXbTj7Jbd9QheZiykJ-i0TIse-lPYr0oPm9rQsaN1Ar5D3o7SGp_sB_4Ig2K_OoScJwFdYhy6QdXWquybgmlGxZoyw8QYCD86m3LjRyA4aAhUgatUt4eR62aCqS1KngiUDYy79ez1m"/>
+<div class="relative z-20 h-full flex flex-col justify-center px-12 max-w-2xl">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-4">Craft Your Story</span>
+<h1 class="text-white text-5xl md:text-6xl font-bold serif-heading leading-tight mb-6">
+                        Discover the Art of Pottery in Singapore
+                    </h1>
+<p class="text-gray-200 text-lg mb-8 font-light max-w-md">
+                        Find, book, and review local ceramic workshops and artisanal studios across the island.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-[#0d1b19] px-8 py-3 rounded-lg font-bold hover:brightness-105 shadow-lg">
+                            Explore Studios
+                        </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-3 rounded-lg font-bold hover:bg-white/20 transition-all">
+                            How it Works
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Filter Bar -->
+<section class="relative -mt-12 z-30 px-4">
+<div class="bg-white dark:bg-gray-900 shadow-xl rounded-xl p-3 flex flex-col md:flex-row gap-2 border border-gray-100 dark:border-gray-800">
+<div class="flex-1 flex items-center px-4 gap-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+<span class="material-symbols-outlined text-sage">search</span>
+<input class="w-full bg-transparent border-none focus:ring-0 py-3 text-sm placeholder:text-gray-400" placeholder="Search for studios or workshops..." type="text"/>
+</div>
+<div class="flex flex-wrap md:flex-nowrap gap-2">
+<button class="flex items-center gap-2 bg-gray-50 dark:bg-gray-800 px-4 py-3 rounded-lg border border-transparent hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-sm text-terracotta">location_on</span>
+<span class="text-sm font-medium">Location</span>
+<span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+<button class="flex items-center gap-2 bg-gray-50 dark:bg-gray-800 px-4 py-3 rounded-lg border border-transparent hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-sm text-terracotta">category</span>
+<span class="text-sm font-medium">Class Type</span>
+<span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+<button class="flex items-center gap-2 bg-gray-50 dark:bg-gray-800 px-4 py-3 rounded-lg border border-transparent hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-sm text-terracotta">filter_list</span>
+<span class="text-sm font-medium">Filters</span>
+</button>
+<button class="bg-terracotta text-white px-8 py-3 rounded-lg font-bold hover:brightness-110">
+                        Search
+                    </button>
+</div>
+</div>
+<!-- Quick Filter Tags -->
+<div class="flex gap-3 py-6 overflow-x-auto no-scrollbar">
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-primary/20 text-[#0d1b19] text-xs font-bold border border-primary/40">Tanjong Pagar</button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium border border-gray-200 dark:border-gray-700 hover:border-sage transition-all">Orchard</button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium border border-gray-200 dark:border-gray-700 hover:border-sage transition-all">East Coast</button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium border border-gray-200 dark:border-gray-700 hover:border-sage transition-all">Wheel Throwing</button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium border border-gray-200 dark:border-gray-700 hover:border-sage transition-all">Handbuilding</button>
+<button class="shrink-0 px-4 py-1.5 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium border border-gray-200 dark:border-gray-700 hover:border-sage transition-all">Beginner Friendly</button>
+</div>
+</section>
+<!-- Main Content: Featured Studios -->
+<section class="py-10">
+<div class="flex items-end justify-between mb-8">
+<div>
+<h2 class="text-3xl font-bold serif-heading mb-2">Featured Studios</h2>
+<p class="text-gray-500 text-sm">Our hand-picked selection of top-rated pottery studios this month.</p>
+</div>
+<a class="text-terracotta font-bold text-sm flex items-center gap-1 hover:underline" href="#">
+                    View All Studios
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Grid of Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Interior of a sunlit modern pottery studio with shelves of ceramics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA83rFznkzZWdob1B0jsIrKmtXs-GJ5EwU7JRZtHDu9Vr4YUgpk3or8TVEixSKROq6PJWr_N6cWnLmUGB5j5IfW8_RDgxVngrJFsHtA8pfCx1kCcXHwc3a_v05-BR260C8IJmrfbZHyDSl752KWQeVwIz6Dz2UZW_DypxeL1whwK64ezr6PbKKqdEAFYgP-2E-RcXm40OwV2mWk6t1X5N3ylcePmvN5FY3rRqch_EoDXZGCjSEosQkQSBnKf-mbjoWVCKpNpEnwmZLF"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur-sm text-[#0d1b19] text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Top Rated</span>
+</div>
+<button class="absolute top-4 right-4 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full p-2 text-white transition-all">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold serif-heading">Clay Cove Studio</h3>
+<div class="flex items-center gap-1 bg-sage/10 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-sage text-[14px] fill-1">star</span>
+<span class="text-xs font-bold text-sage">4.9</span>
+</div>
+</div>
+<p class="text-gray-500 text-sm line-clamp-2 mb-4 leading-relaxed">
+                            A minimalist space dedicated to the slow art of handbuilding and therapeutic glazing sessions.
+                        </p>
+<div class="flex items-center gap-4 text-xs font-medium text-gray-400 mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span>Tanjong Pagar</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">payments</span>$$ - $$$</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-gray-800">
+<span class="text-xs font-bold text-gray-700 dark:text-gray-300">From $75 / sess</span>
+<button class="text-primary text-sm font-bold border-b-2 border-primary hover:text-[#0d1b19] transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Hands working on a clay wheel throwing project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSXRYanocMvEqR2bwMkQl1qM6kvZ_BxvfPBNM2TKGokuHUL7xZdygtv0ia6-gF-9sfnZWodB4gwR8KazyB59w-FdMdkO8988YeqZOjXNHZfqqPro8Q-TUA9YoQO61mAlcbAbyXf5bn3Fd5__UztutLPErqRFiga8nKjcX39sNBmmAzv2aM0EVYRmgnJYZMaslAkDww2c-8QiDLSnFE9KPNg0fHc3J-l6u9itEiohyagXXXR-QS--nOwTjDxRZjer-XNgoP8Hll6UbC"/>
+<button class="absolute top-4 right-4 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full p-2 text-white transition-all">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold serif-heading">Mud Rock Ceramics</h3>
+<div class="flex items-center gap-1 bg-sage/10 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-sage text-[14px] fill-1">star</span>
+<span class="text-xs font-bold text-sage">4.8</span>
+</div>
+</div>
+<p class="text-gray-500 text-sm line-clamp-2 mb-4 leading-relaxed">
+                            Specializing in professional wheel-throwing classes and industrial kiln firing services for all levels.
+                        </p>
+<div class="flex items-center gap-4 text-xs font-medium text-gray-400 mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span>Orchard</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">payments</span>$$$</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-gray-800">
+<span class="text-xs font-bold text-gray-700 dark:text-gray-300">From $90 / sess</span>
+<button class="text-primary text-sm font-bold border-b-2 border-primary hover:text-[#0d1b19] transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Pottery workshop tools and drying ceramic pieces on a shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbTRfj7OBEyaZCIuKRkppSac4cP6i2ff4l4sFlIImNUpxlWly2DhLkegDDNaH-mp8p9eP8D-h7NtLkmD87XVmzr9Dbx6tsS7Vjz2pnKdPKOXLWy5l1GI-7lRhFTmMINmpYAkYFDTzV6AjzSov235drKlVcITlnM5cECxIyBDRp6GPFEZVBDAghinTE0snoY65bqbGR7yuSJaDc-ZafxPAGRSPiwlgiJA5tJGweGXenTvM0eIL2msNH-Vs1D37gdrxHG6EpT-0gSTYm"/>
+<div class="absolute top-4 left-4">
+<span class="bg-terracotta text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">New Arrival</span>
+</div>
+<button class="absolute top-4 right-4 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full p-2 text-white transition-all">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold serif-heading">East Side Clay</h3>
+<div class="flex items-center gap-1 bg-sage/10 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-sage text-[14px] fill-1">star</span>
+<span class="text-xs font-bold text-sage">5.0</span>
+</div>
+</div>
+<p class="text-gray-500 text-sm line-clamp-2 mb-4 leading-relaxed">
+                            A community-focused studio in Katong offering weekend family workshops and beginner intensives.
+                        </p>
+<div class="flex items-center gap-4 text-xs font-medium text-gray-400 mb-6">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span>East Coast</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">payments</span>$ - $$</span>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-gray-50 dark:border-gray-800">
+<span class="text-xs font-bold text-gray-700 dark:text-gray-300">From $60 / sess</span>
+<button class="text-primary text-sm font-bold border-b-2 border-primary hover:text-[#0d1b19] transition-all">Book Now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Section -->
+<section class="py-16">
+<h2 class="text-3xl font-bold serif-heading text-center mb-12">Discover by Technique</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<a class="flex flex-col items-center group" href="#">
+<div class="size-24 rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-terracotta transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="Pottery wheel category" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZDYPOgRc4YgzmKhlw48OvKOT8uzfA1ZqluqAEM0RYMlDWa_GAe4H37C6uU0hl2INyrmPFQf0gqwb6uUyFde7b83H1qlmtvO6iIjuVt4wv3Jc1hznTOkhK49Q7Y8PxNk7InXtP_9vBuJ6JI1LJxPybSdTjYTPzsDXEwC17Nd_gSAUgedA4Ri-vhV7aKyTvEHSoaJpMMIhEpHbrLgQyOnTk4_5iBgt83Vyg0XpaQ3W7spBrW6wBNzcyHy3zwjQXlYlitExcXgs0AES"/>
+</div>
+<span class="font-bold text-sm">Wheel Throwing</span>
+</a>
+<a class="flex flex-col items-center group" href="#">
+<div class="size-24 rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-terracotta transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="Handbuilding pottery category" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANIXfoCpvtfyVQ-tGxI6Rr5e8KXVLFh4_cgkSn_okVgZdMGIXEa2vfmzwYQs0kWHUNAEPTcJg8pIdo-KlWULiBGs6BbQn0xEieoyephB-U8swysfNHoAYNedRuTI-ny-F6k3s16NicOOkudagH9Qq5fcpnPQrPoP-FCu-7k8IXip6ZIywgdFjopwRJnqaL23ushMpvOFV7i1X2bdvTT1BP4eP2pnxqyRErMCfQQ6m_ZmuhPJGPmBk3QGDzVcltdRGXdORb0rm4K9m2"/>
+</div>
+<span class="font-bold text-sm">Handbuilding</span>
+</a>
+<a class="flex flex-col items-center group" href="#">
+<div class="size-24 rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-terracotta transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="Glazing category" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgHfPoKiUNapcQijBCsRRdIgHRAix0aWAQm3_Ev7O8KuY2TXmc-Tml0dPimwaW_JYPxLTqSuuporP_HzIXN2EQ47zUz1DNiDDYpFHYIwF5sDzFAAidfwmeNJ-Mo6r31J2oIn_VZOjeLfFMvPkeaAdPgonMiOsrvrULHKysUxlqeKFIGEjbL4r0J-vFMuJ9frLkrdQ9h3ZUC6aBDl0g7W7pXvpauWC1_ew05w-VKcLTS_y3s9z51TJfHfsfk3YfL_C8QEfOJKTiIdBf"/>
+</div>
+<span class="font-bold text-sm">Glazing Arts</span>
+</a>
+<a class="flex flex-col items-center group" href="#">
+<div class="size-24 rounded-full overflow-hidden mb-4 border-2 border-transparent group-hover:border-terracotta transition-all p-1">
+<img class="w-full h-full object-cover rounded-full" data-alt="Kids pottery workshop category" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcg8etT3Fa4S0OPBIt2I_yFQYA-BlzLVbfYVePHxVJo5mI9Cn28OgmuSqpSegXRSdqWkmfF4RXrh6ndCpIyhE_g18ve14WbgMat_Ptbop0pQBvM_A0_34V6JlDXabs8KBsWOCyXOB8dLXf2lO9JK8rkmG8uOBGeIf59srBmYE4F4GcvjtRRMt7fycSgs9YtqRleZbF32MyKv1Mgm1gmwZ9KOoqeChPbFnQJ5ycK2rMazIUPyKxNvaBKN9gPMRDrtYDNY1MMlf0EWQd"/>
+</div>
+<span class="font-bold text-sm">Kids &amp; Family</span>
+</a>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="py-16 mb-20 bg-sage/10 rounded-3xl px-8 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-sage text-4xl mb-4">local_post_office</span>
+<h2 class="text-3xl font-bold serif-heading mb-4">Join our Pottery Community</h2>
+<p class="text-gray-600 dark:text-gray-400 max-w-lg mb-8">
+                Subscribe to receive weekly updates on new workshop openings, member-only discounts, and ceramic tips.
+            </p>
+<div class="w-full max-w-md flex flex-col md:flex-row gap-2">
+<input class="flex-1 px-4 py-3 rounded-lg border-gray-200 focus:ring-primary focus:border-primary" placeholder="Enter your email address" type="email"/>
+<button class="bg-[#0d1b19] text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition-all">Subscribe</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#e7f3f1] dark:border-gray-800 py-12">
+<div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-6 text-terracotta">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+</svg>
+</div>
+<span class="text-lg font-bold serif-heading">CeramicSG</span>
+</div>
+<p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    Your ultimate guide to Singapore's vibrant ceramic art scene. From Tanjong Pagar to Changi, we find the perfect wheel for you.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-gray-400 hover:text-primary cursor-pointer">social_leaderboard</span>
+<span class="material-symbols-outlined text-gray-400 hover:text-primary cursor-pointer">camera</span>
+<span class="material-symbols-outlined text-gray-400 hover:text-primary cursor-pointer">alternate_email</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Explore</h4>
+<ul class="space-y-4 text-sm text-gray-500">
+<li><a class="hover:text-primary transition-colors" href="#">Find a Studio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Workshop Calendar</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pottery Supplies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">For Business</h4>
+<ul class="space-y-4 text-sm text-gray-500">
+<li><a class="hover:text-primary transition-colors" href="#">List Your Studio</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Advertising</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Studio Management Software</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-6 uppercase tracking-wider">Support</h4>
+<ul class="space-y-4 text-sm text-gray-500">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-6 mt-16 pt-8 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+<span>© 2024 CeramicSG. All Rights Reserved.</span>
+<div class="flex items-center gap-1" data-location="Singapore" style="">
+<span class="material-symbols-outlined text-[12px]">location_on</span>
+                SINGAPORE
+            </div>
+</div>
+</footer>
+</body></html>
